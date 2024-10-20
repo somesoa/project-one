@@ -1,10 +1,14 @@
 body {
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+
+
 }
 
-.header,
-.banner,
-.footer {
+.header, .banner, .footer {
 
     background-color: #1F2937;
     color: white;
@@ -13,30 +17,55 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
-
-
-
+    justify-content: space-between;
+    padding: 50px 200px 100px 200px;
 }
 
-.placeholder{
-    height: 200px;
-    width: 600px;
-    background-color: #80848a;
-    padding: 10% 0;
-       text-align: center;
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+
 }
 
 .banner {
     display: flex;
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
     align-items: center;
+    padding: 50px 200px 100px 200px;
+    gap: 50px;
+
+
 }
 
-button,
-.action {
+.banner-title {
+    color: #f9faf8;
+
+}
+
+.banner-title-big {
+    font-size: 48px;
+    font-weight: bolder;
+
+
+}
+
+
+
+.placeholder {
+    display: flex;
+    height: 200px;
+    width: 600px;
+    background-color: #80848a;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+button, .action {
     background-color: #3882F6;
     color: white;
 }
@@ -44,30 +73,43 @@ button,
 button {
     border-radius: 4px;
     font-weight: bold;
-    
+    padding: 10px 40px;
+
 }
 
 .information {
     background-color: white;
     align-items: center;
     text-align: center;
+    padding: 40px 200px 40px 200px;
 
 }
 
 .info-list {
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
+
 
 }
 
+.info-type {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .image {
-    border: 5px solid #3882F6;
+    border: 4px solid #3882F6;
     height: 100px;
     width: 100px;
-    border-radius: 6px;
+    border-radius: 10px;
 
+
+}
+
+.image-text {
+    width: 100px;
 
 }
 
@@ -76,6 +118,8 @@ button {
     color: #1F2937;
     font-style: italic;
     font-size: 36px;
+    padding: 100px 300px;
+
 
 
 }
@@ -85,10 +129,18 @@ span {
 }
 
 .action {
+    background-color: #f9faf8;
+    padding: 100px 200px;
+
+
+}
+.action-box {
     background-color: #3882F6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 25px 100px;
+    border-radius: 10px;
 
 }
 
@@ -102,9 +154,19 @@ ul {
 
 li {
     float: left;
+    margin-right: 20px;
+
 }
 
 
 a {
+    color: white;
     text-decoration: none;
-}
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+  }
